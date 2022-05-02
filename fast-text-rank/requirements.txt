@@ -1,0 +1,6 @@
+FastTextRank==1.4
+Flask==2.0.2
+Flask_Cors==3.0.6
+gensim==4.1.2
+jieba==0.42.1
+numpy==1.21.2
