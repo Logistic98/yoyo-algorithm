@@ -11,7 +11,7 @@ from gtts import gTTS
 from code import ResponseCode, ResponseMessage
 from log import logger
 from base_config import PROXY_OPEN, PROXY_URL, LANGUAGES
-from utils import replaceAll, downloadFile
+from utils import replaceAll, download_file
 
 # 是否开启代理
 if PROXY_OPEN:
@@ -55,7 +55,7 @@ def textToVoice():
             os.makedirs('./tmp')
         audio = gTTS(text=text, lang=lang)
         audio.save(mp3_path)
-        return downloadFile(mp3_path)
+        return download_file(mp3_path)
     except Exception as e:
         logger.error(e)
         fail_response = dict(code=ResponseCode.BUSINESS_FAIL, msg=ResponseMessage.BUSINESS_FAIL, data=None)
