@@ -14,3 +14,6 @@ docker rmi -f paddle-image
 
 docker rm -f domain-parse-location
 docker rmi -f domain-parse-location-image
+
+docker rm -f image-feature-vector
+docker rmi -f image-feature-vector-image

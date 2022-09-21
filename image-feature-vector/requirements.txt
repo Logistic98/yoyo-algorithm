@@ -1,0 +1,5 @@
+opencv_python
+numpy==1.20.1
+Flask==2.0.2
+keras==2.6.0
+requests==2.26.0

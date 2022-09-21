@@ -45,3 +45,9 @@
 GeoIP2-python：[https://github.com/maxmind/GeoIP2-python](https://github.com/maxmind/GeoIP2-python)（GeoIP2 web 服务客户端和数据库阅读器的 Python 代码）
 
 GeoLite.mmdb：[https://github.com/P3TERX/GeoLite.mmdb](https://github.com/P3TERX/GeoLite.mmdb)（MaxMind 的 GeoIP2 GeoLite2 国家、城市和 ASN 数据库）
+
+### 6. Keras-VGG19
+
+VGG19网络在图像领域有着广泛的应用，它能够很好的提取到图片的有用特征。
+
+论文地址：https://arxiv.org/abs/1409.1556

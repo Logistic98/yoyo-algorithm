@@ -24,3 +24,8 @@ cd domain-parse-location
 chmod u+x build.sh
 ./build.sh
 cd ..
+
+cd image-feature-vector
+chmod u+x build.sh
+./build.sh
+cd ..
