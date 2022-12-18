@@ -1,4 +1,5 @@
 opencv_python
+pre-request==2.1.5
 numpy==1.20.1
 Flask==2.0.2
 Flask_Cors==3.0.6
