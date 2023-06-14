@@ -20,7 +20,7 @@ CORS(app, supports_credentials=True)
 # PaddleOCR：图片OCR内容识别算法
 """
 @app.route(rule='/paddle/paddleOcr', methods=['POST'])
-def getOcrText():
+def paddleOcr():
 
     # 从请求中解析出图像的base64字符串
     request_data = request.get_data(as_text=True)
@@ -61,12 +61,13 @@ def getOcrText():
     # 最终对请求进行响应
     return response_body
 
+
 """
 # PaddleNLP：自然语言处理算法
 # 只封装了中文分词(word_segmentation)、词性标注(pos_tagging)、名词短语标注(knowledge_mining)、情感分析(sentiment_analysis)
 """
 @app.route(rule='/paddle/paddleNlp', methods=['POST'])
-def getEmotionAnalysis():
+def paddleNlp():
 
     # 获取JSON格式的请求体，并解析
     global csv_path
@@ -105,6 +106,7 @@ def getEmotionAnalysis():
     success_response = dict(code=ResponseCode.SUCCESS, msg=ResponseMessage.SUCCESS, data=result)
     logger.info(success_response)
     return jsonify(success_response)
+
 
 if __name__ == '__main__':
     # 解决中文乱码问题
